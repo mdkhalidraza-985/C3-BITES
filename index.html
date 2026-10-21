@@ -1,0 +1,345 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#101010">
+  <meta name="description" content="C3 Bites Restaurant - Delicious food in Garhwa, Jharkhand.">
+  <title>C3 Bites | Delicious Bites</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <header class="header">
+    <nav class="navbar container">
+      <a href="#home" class="brand">
+        <img src="logo.png" alt="C3 Bites Logo">
+      </a>
+
+      <button class="hamburger" id="hamburger"
+        aria-label="Toggle navigation" aria-expanded="false">
+        ☰
+      </button>
+
+      <div class="nav-links" id="navLinks">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#menu">Menu</a>
+        <a href="#cart">Cart <span class="badge" id="cartCount">0</span></a>
+        <a href="#payment">Payment</a>
+        <a href="#contact">Contact</a>
+        <button class="btn btn-red" id="navOrder">Order on WhatsApp ↗</button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero" id="home">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <p class="eyebrow">FRESHLY MADE • FULL OF FLAVOUR</p>
+          <h1>Good food.<br><span>Great mood.</span></h1>
+          <p class="hero-description">
+            Delicious bites, satisfying flavours and a place for every craving.
+            Discover your favourites at C3 Bites, Garhwa.
+          </p>
+
+          <div class="hero-buttons">
+            <a href="#menu" class="btn btn-red">Explore Menu →</a>
+            <a href="#about" class="btn btn-outline">Our Story</a>
+          </div>
+
+          <div class="rating">
+            <span>★★★★★</span>
+            <div>
+              <strong>4.7/5 Google rating</strong>
+              <small>125 reviews shown on the listing</small>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-image">
+          <img src="home.png"
+            alt="C3 Bites restaurant details">
+        </div>
+      </div>
+    </section>
+
+    <!-- HIGHLIGHTS -->
+    <section class="highlights">
+      <div class="container highlight-grid">
+        <div><span>✦</span><p><strong>Fresh flavours</strong><small>Made with care</small></p></div>
+        <div><span>♡</span><p><strong>Your favourites</strong><small>Something for every craving</small></p></div>
+        <div><span>↗</span><p><strong>Easy ordering</strong><small>Order directly on WhatsApp</small></p></div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="section" id="about">
+      <div class="container about-grid">
+        <div class="about-image">
+          <img src="home2.png"
+            alt="C3 Bites local restaurant information" loading="lazy">
+        </div>
+
+        <div class="about-content">
+          <p class="eyebrow">ABOUT C3 BITES</p>
+          <h2>Big flavour.<br><span>Local heart.</span></h2>
+          <p>
+            C3 Bites is your local stop for tasty food and satisfying bites.
+            Browse the menu, add your favourites to the cart, and send your
+            order directly to the restaurant through WhatsApp.
+          </p>
+
+          <div class="about-stats">
+            <div><strong>4.7 ★</strong><small>Google rating</small></div>
+            <div><strong>₹1–200</strong><small>Reported spend/person</small></div>
+            <div><strong>10 PM</strong><small>Listed closing time</small></div>
+          </div>
+
+          <a href="#contact" class="text-link">Find our restaurant →</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- MENU -->
+    <section class="section menu-section" id="menu">
+      <div class="container">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">THE GOOD STUFF</p>
+            <h2>Pick your <span>favourites.</span></h2>
+          </div>
+          <p>Choose your food and add it to your order.</p>
+        </div>
+
+        <div class="menu-grid">
+          <article class="food-card">
+            <div class="food-image burger-bg">
+              <img src="food1.jpg" alt="Classic Burger" class="food-img">
+              <span class="food-label">FAVOURITE</span>
+            </div>
+            <div class="food-info">
+              <div class="food-title"><h3>Classic Burger</h3><strong>₹99</strong></div>
+              <p>A satisfying burger packed with flavour.</p>
+              <button class="btn btn-dark add-btn" data-id="burger">
+                Add to Cart <span>+</span>
+              </button>
+            </div>
+          </article>
+
+          <article class="food-card">
+            <div class="food-image pizza-bg">
+              <img src="food2.jpg" alt="Cheese Pizza" class="food-img">
+              <span class="food-label">CHEESY</span>
+            </div>
+            <div class="food-info">
+              <div class="food-title"><h3>Cheese Pizza</h3><strong>₹149</strong></div>
+              <p>Cheesy goodness for your pizza cravings.</p>
+              <button class="btn btn-dark add-btn" data-id="pizza">
+                Add to Cart <span>+</span>
+              </button>
+            </div>
+          </article>
+
+          <article class="food-card">
+            <div class="food-image fries-bg">
+              <img src="food3.jpg" alt="Paneer Tikka" class="food-img">
+              <span class="food-label">CRUNCHY</span>
+            </div>
+            <div class="food-info">
+              <div class="food-title"><h3>Crispy Fries</h3><strong>₹79</strong></div>
+              <p>Golden fries for a perfect snack.</p>
+              <button class="btn btn-dark add-btn" data-id="fries">
+                Add to Cart <span>+</span>
+              </button>
+            </div>
+          </article>
+
+          <article class="food-card">
+            <div class="food-image sandwich-bg">
+              <img src="food4.jpg" alt="Paneer Tikka" class="food-img">
+              <span class="food-label">QUICK BITE</span>
+            </div>
+            <div class="food-info">
+              <div class="food-title"><h3>Grilled Sandwich</h3><strong>₹89</strong></div>
+              <p>A warm, crispy and delicious bite.</p>
+              <button class="btn btn-dark add-btn" data-id="sandwich">
+                Add to Cart <span>+</span>
+              </button>
+            </div>
+          </article>
+        </div>
+
+        <p class="disclaimer">
+          Demo menu: replace these items and prices with C3 Bites' actual menu.
+        </p>
+      </div>
+    </section>
+
+    <!-- CART -->
+    <section class="section" id="cart">
+      <div class="container">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">YOUR ORDER</p>
+            <h2>Your cart, <span>your call.</span></h2>
+          </div>
+          <p>Add multiple items and the total will update automatically.</p>
+        </div>
+
+        <div class="cart-layout">
+          <div class="cart-items" id="cartItems" aria-live="polite">
+            <div class="empty-cart">
+              <span>🛍️</span>
+              <h3>Your cart is empty</h3>
+              <p>Add your favourite food from the menu.</p>
+              <a href="#menu" class="text-link">Browse menu →</a>
+            </div>
+          </div>
+
+          <aside class="cart-summary">
+            <h3>Order Summary</h3>
+            <div class="summary-row">
+              <span>Subtotal</span><strong id="subtotal">₹0</strong>
+            </div>
+            <div class="summary-row">
+              <span>Delivery charges</span><strong>Confirm on WhatsApp</strong>
+            </div>
+            <div class="summary-row total-row">
+              <span>Food Total</span><strong id="total">₹0</strong>
+            </div>
+
+            <label for="customerName">Your name</label>
+            <input id="customerName" type="text" placeholder="Enter your name">
+
+            <label for="deliveryAddress">Delivery address</label>
+            <textarea id="deliveryAddress" rows="3"
+              placeholder="House, street and area (optional)"></textarea>
+
+            <button class="btn btn-red full-width" id="checkoutBtn">
+              Send Order on WhatsApp ↗
+            </button>
+            <small class="help-text">
+              WhatsApp opens with your order message. Press Send in WhatsApp
+              to actually send it.
+            </small>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- PAYMENT -->
+    <section class="section payment-section" id="payment">
+      <div class="container payment-grid">
+        <div>
+          <p class="eyebrow">SIMPLE & CONVENIENT</p>
+          <h2>Pay your way.<br><span>Easy as a tap.</span></h2>
+          <p class="muted">
+            Confirm your order and the final payable amount with C3 Bites
+            before making a payment.
+          </p>
+
+          <div class="payment-options">
+            <button class="payment-btn" data-app="Google Pay">
+              <span class="pay-logo gpay">G</span> Google Pay <span>↗</span>
+            </button>
+            <button class="payment-btn" data-app="PhonePe">
+              <span class="pay-logo phonepe">पे</span> PhonePe <span>↗</span>
+            </button>
+            <button class="payment-btn" data-app="Paytm">
+              <span class="pay-logo paytm">P</span> Paytm <span>↗</span>
+            </button>
+            <button class="payment-btn" data-app="UPI">
+              <span class="pay-logo upi">UPI</span> Other UPI app <span>↗</span>
+            </button>
+          </div>
+
+          <p class="payment-note">
+            Payment links require the restaurant's real UPI ID in
+            <code>script.js</code>. This static website cannot verify
+            successful payments.
+          </p>
+        </div>
+
+        <div class="qr-card">
+          <div class="qr-heading">
+            <strong>SCAN & PAY</strong><span>UPI PAYMENT</span>
+          </div>
+          <div id="qrContainer" class="qr-container">
+            <div class="qr-placeholder">UPI</div>
+            <small>Configure the real UPI ID in script.js</small>
+
+          </div>
+          <div class="qr-total">
+            <span>Current food total</span><strong id="qrAmount">₹0</strong>
+          </div>
+          <p class="muted small">Verify the payee and amount before paying.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section" id="contact">
+      <div class="container contact-card">
+        <div>
+          <p class="eyebrow">COME SAY HELLO</p>
+          <h2>Craving something<br><span>delicious?</span></h2>
+          <p class="muted">
+            Visit C3 Bites on Chiniya Road, Bishunpur, Garhwa.
+          </p>
+        </div>
+
+        <div class="contact-details">
+          <div class="contact-item">
+            <span>⌖</span>
+            <div><small>ADDRESS</small>
+              <p>Chiniya Road, near SBI Bazar Branch, Eriquee Mohalla,
+                Bishunpur, Garhwa, Jharkhand 822114</p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <span>☎</span>
+            <div><small>PHONE</small>
+              <a href="tel:07551193400">075511 93400</a>
+            </div>
+          </div>
+          <div class="contact-item">
+            <span>◷</span>
+            <div><small>LISTED HOURS</small><p>Listed closing time: 10 PM</p></div>
+          </div>
+          <a class="btn btn-red full-width"
+             href="https://www.google.com/maps/search/?api=1&query=C3+Bites+Garhwa+Jharkhand"
+             target="_blank" rel="noopener">Get Directions ↗</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-main">
+      <a href="#home" class="footer-logo">
+        <img src="logo.png" alt="C3 Bites">
+      </a>
+      <p>Good food. Great mood. See you at C3 Bites.</p>
+      <div class="footer-links">
+        <a href="#about">About</a>
+        <a href="#menu">Menu</a>
+        <a href="#cart">Cart</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <span>© <span id="year"></span> C3 Bites</span>
+      <span>Made with <span class="red">♥</span> for food lovers.</span>
+    </div>
+  </footer>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="script.js"></script>
+</body>
+</html>
